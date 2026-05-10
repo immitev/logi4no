@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Образователно-развлекатални проектчета за малки и големи</title>
+    <meta
+      name="description"
+      content="Игри и образователни страници за малки и големи."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #fbfaf7;
+        --text: #04070d;
+        --muted: #334155;
+        --line: #ded8cf;
+        --line-strong: #d4cec5;
+        --accent: #2f55b7;
+        --card: #fffdfa;
+        --shadow: 0 16px 38px rgba(49, 43, 34, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--page);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100svh;
+        background: var(--page);
+        color: var(--text);
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        width: min(100% - 48px, 848px);
+        margin: 0 auto;
+        padding: 54px 0 34px;
+      }
+
+      .intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 86px;
+        align-items: start;
+        animation: rise-in 520ms ease-out both;
+      }
+
+      .intro p {
+        max-width: 570px;
+        margin: 0;
+        padding-top: 1px;
+        font-size: clamp(1.12rem, 1.55vw, 1.32rem);
+        line-height: 1.55;
+        letter-spacing: 0;
+      }
+
+      .intro a {
+        color: var(--accent);
+        font-style: italic;
+        text-decoration: none;
+      }
+
+      .intro a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .hero-image {
+        display: block;
+        width: 220px;
+        height: 220px;
+        aspect-ratio: 1;
+        border-radius: 14px;
+        object-fit: cover;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+      }
+
+      main {
+        margin-top: 38px;
+      }
+
+      .section {
+        margin-top: 34px;
+        animation: rise-in 580ms ease-out both;
+      }
+
+      .section:nth-of-type(2) {
+        animation-delay: 70ms;
+      }
+
+      .section:nth-of-type(3) {
+        animation-delay: 120ms;
+      }
+
+      .section-title {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.83rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .project {
+        min-height: 124px;
+        padding: 22px 20px 20px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--card);
+        text-decoration: none;
+        transition:
+          border-color 180ms ease,
+          box-shadow 180ms ease,
+          transform 180ms ease;
+      }
+
+      .project:hover {
+        border-color: var(--line-strong);
+        box-shadow: var(--shadow);
+        transform: translateY(-2px);
+      }
+
+      .project:focus-visible {
+        outline: 3px solid rgba(47, 85, 183, 0.22);
+        outline-offset: 3px;
+      }
+
+      .project h2 {
+        margin: 0 0 8px;
+        font-size: 1.03rem;
+        line-height: 1.35;
+        letter-spacing: 0;
+      }
+
+      .project p {
+        margin: 0;
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+
+      footer {
+        margin-top: 84px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.88rem;
+      }
+
+      @keyframes rise-in {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 1ms !important;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          width: min(100% - 32px, 560px);
+          padding-top: 32px;
+        }
+
+        .intro {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        .intro p {
+          font-size: 1.08rem;
+        }
+
+        .hero-image {
+          width: min(100%, 230px);
+          height: auto;
+          justify-self: start;
+        }
+
+        main {
+          margin-top: 30px;
+        }
+
+        .section {
+          margin-top: 30px;
+        }
+
+        .projects {
+          grid-template-columns: 1fr;
+        }
+
+        .project {
+          min-height: 116px;
+        }
+
+        footer {
+          margin-top: 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="intro" aria-label="Въведение">
+        <p>
+          Здравейте, аз съм Иван Митев и тук може да откриете няколко мои проектчета &mdash; игри и
+          образователни страници, с които се надявам да помогна на малки и по-големи да развият полезни
+          знания и умения, докато се забавляват.
+        </p>
+        <img
+          class="hero-image"
+          src="assets/hero.jpg"
+          alt="Илюстрация на глава, от която излизат букви, пъзели и символи"
+          width="1024"
+          height="1024"
+        />
+      </header>
+
+      <main>
+        <section class="section" aria-labelledby="kids-title">
+          <h1 class="section-title" id="kids-title">За най-малките</h1>
+          <div class="projects">
+            <a class="project" href="https://sdvoi-bukvichkite.lovable.app/">
+              <h2>Сдвои буквичките</h2>
+              <p>
+                Игра за учене на малки и главни букви &mdash; Намери и свържи двойката еднакви букви.
+              </p>
+            </a>
+
+            <a class="project" href="https://bukvichko.lovable.app/">
+              <h2>Чуй и избери</h2>
+              <p>
+                Детето трябва да чуе буквата/сричката/думата/цифрата и да я избере.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="older-title">
+          <h1 class="section-title" id="older-title">За тийнейджъри и нагоре</h1>
+          <div class="projects">
+            <a class="project" href="https://zabludi.logi4no.com/">
+              <h2>Заблуди</h2>
+              <p>
+                Логическите заблуди/грешки са трикове, които те карат да мислиш, че нещо е вярно, когато не е.
+              </p>
+            </a>
+
+            <a class="project" href="https://pristrastia.logi4no.com/">
+              <h2>Когнитивни пристрастия</h2>
+              <p>
+                Когнитивните пристрастия/изкривявания са често срещани "грешки в мисленето", когато мозъкът ни прави бързи, но неточни преценки.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="other-title">
+          <h1 class="section-title" id="other-title">Други</h1>
+          <div class="projects">
+            <a class="project" href="https://ruska-trupa.logi4no.com/">
+              <h2>Руска Трупа</h2>
+              <p>
+                Класическа игра на карти за трима, с наддаване и разиграване.
+              </p>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>&copy; 2026 Иван Митев &middot; направено с 💌</footer>
+    </div>
+  </body>
+</html>
