@@ -99,10 +99,19 @@
 
       .intro p {
         max-width: 570px;
-        margin: 0;
+        margin: 14px 0 0;
         padding-top: 1px;
         font-size: clamp(1.12rem, 1.55vw, 1.32rem);
         line-height: 1.55;
+        letter-spacing: 0;
+      }
+
+      .page-title {
+        max-width: 570px;
+        margin: 0;
+        font-size: clamp(1.82rem, 4.1vw, 3.15rem);
+        font-weight: 700;
+        line-height: 1.08;
         letter-spacing: 0;
       }
 
@@ -185,7 +194,7 @@
         outline-offset: 3px;
       }
 
-      .project h2 {
+      .project h3 {
         margin: 0 0 8px;
         font-size: 1.03rem;
         line-height: 1.35;
@@ -278,11 +287,16 @@
   <body>
     <div class="page">
       <header class="intro" aria-label="Въведение">
-        <p>
-          Здравейте и добре дошли! Тук съм събрал своите малки дигитални проектчета — игри, образователни страници и други идеи, 
-          създадени с желание да бъдат едновременно полезни и забавни. 
-          Надявам се те да носят удоволствие и да помагат на малки и големи да учат нови неща с усмивка.
-        </p>
+        <div>
+          <h1 class="page-title">
+            Дигитален кът за учене и забавление
+          </h1>
+          <p>
+            Здравейте и добре дошли! Тук съм събрал своите малки дигитални проектчета —
+             игри, образователни материали и други идеи.
+            Надявам се да помагат на малки и големи да трупат полезни умения и да развиват мисленето си.
+          </p>
+        </div>
         <img
           class="hero-image"
           src="assets/hero.jpg"
@@ -294,17 +308,17 @@
 
       <main>
         <section class="section" aria-labelledby="kids-title">
-          <h1 class="section-title" id="kids-title">За най-малките</h1>
+          <h2 class="section-title" id="kids-title">За най-малките</h2>
           <div class="projects">
             <a class="project" href="https://sdvoi-bukvichkite.lovable.app/">
-              <h2>Сдвои буквичките</h2>
+              <h3>Сдвои буквичките</h3>
               <p>
                 Игра за учене на малки и главни букви. Намери бързо сестричките буквички на двата реда!
               </p>
             </a>
 
             <a class="project" href="https://bukvichko.lovable.app/">
-              <h2>Чуй и избери</h2>
+              <h3>Чуй и избери</h3>
               <p>
                 Чуй буквичката, сричката, думата, цифрата и бързичко я избери!
               </p>
@@ -313,17 +327,17 @@
         </section>
 
         <section class="section" aria-labelledby="older-title">
-          <h1 class="section-title" id="older-title">За тийнейджъри и нагоре</h1>
+          <h2 class="section-title" id="older-title">За тийнейджъри и нагоре</h2>
           <div class="projects">
             <a class="project" href="https://zabludi.logi4no.com/">
-              <h2>Логически Заблуди</h2>
+              <h3>Логически Заблуди</h3>
               <p>
                 Логическите заблуди/грешки са трикове, които те карат да мислиш, че нещо е вярно, когато не е.
               </p>
             </a>
 
             <a class="project" href="https://pristrastia.logi4no.com/">
-              <h2>Когнитивни пристрастия</h2>
+              <h3>Когнитивни пристрастия</h3>
               <p>
                 Когнитивните пристрастия/изкривявания са често срещани "грешки в мисленето", когато мозъкът ни прави бързи, но неточни преценки.
               </p>
@@ -332,10 +346,10 @@
         </section>
 
         <section class="section" aria-labelledby="other-title">
-          <h1 class="section-title" id="other-title">Други</h1>
+          <h2 class="section-title" id="other-title">Други</h2>
           <div class="projects">
             <a class="project" href="https://ruska-trupa.logi4no.com/">
-              <h2>Руска Трупа</h2>
+              <h3>Руска Трупа</h3>
               <p>
                 Класическа игра на карти за трима - наддавай, разигравай, срази ботовете.
               </p>
