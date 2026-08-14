@@ -201,6 +201,30 @@
         letter-spacing: 0;
       }
 
+      .project-heading {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+
+      .project-heading h3 {
+        margin: 0;
+      }
+
+      .project-icon {
+        display: block;
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        background: #ffffff;
+        object-fit: contain;
+        box-shadow: 0 3px 10px rgba(49, 43, 34, 0.08);
+      }
+
       .project p {
         margin: 0;
         color: var(--muted);
@@ -311,28 +335,72 @@
           <h2 class="section-title" id="kids-title">За най-малките</h2>
           <div class="projects">
             <a class="project" href="https://sdvoi-bukvichkite.lovable.app/">
-              <h3>Сдвои буквичките</h3>
+              <div class="project-heading">
+                <img
+                  class="project-icon"
+                  src="https://sdvoi-bukvichkite.lovable.app/favicon.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Сдвои буквичките</h3>
+              </div>
               <p>
                 Игра за учене на малки и главни букви. Намери бързо сестричките буквички на двата реда!
               </p>
             </a>
 
             <a class="project" href="https://bukvichko.lovable.app/">
-              <h3>Чуй и избери</h3>
+              <div class="project-heading">
+                <img
+                  class="project-icon"
+                  src="https://bukvichko.lovable.app/favicon.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Чуй и избери</h3>
+              </div>
               <p>
                 Чуй буквичката, сричката, думата, цифрата и бързичко я избери!
               </p>
             </a>
 
            <a class="project" href="https://bukvichkata.lovable.app/">
-              <h3>Буквичката Ъ</h3>
+              <div class="project-heading">
+                <img
+                  class="project-icon"
+                  src="https://bukvichkata.lovable.app/favicon.ico"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Буквичката Ъ</h3>
+              </div>
               <p>
                 Игра за учене кога се пише буквата Ъ и кога не!
               </p>
             </a>
 
             <a class="project" href="https://zuzzi.lovable.app/">
-              <h3>Чети със Зебрата Зузи</h3>
+              <div class="project-heading">
+                <img
+                  class="project-icon"
+                  src="https://zuzzi.lovable.app/favicon.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Чети със Зебрата Зузи</h3>
+              </div>
               <p>
                 Научи се да четеш по-бързо с помощта на зебрата Зузи!
               </p>
